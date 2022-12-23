@@ -76,6 +76,12 @@ Finally the devs gave us the amazing Explicit Wait utility, which works 99% of t
 
 ----
 
+[What are the Challenges you faced in Selenium?](https://youtu.be/ckPCZ8eT9qE)
+
+[AJAX-driven Dropdown List](https://code-boxx.com/country-state-city-dropdown/)
+
+[Populate Dropdown With AJAX JSON](https://code-boxx.com/populate-dropdown-ajax-json/)
+
 [Use Selenium wait for page to load with Python](https://www.lambdatest.com/blog/selenium-wait-for-page-to-load/)
 
 [How to Use Selenium WebDriver Waits using Python](https://techbeamers.com/selenium-webdriver-waits-python/)
