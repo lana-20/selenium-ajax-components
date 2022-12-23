@@ -7,6 +7,19 @@ In Selenium, there is no constant and consistent support. Experienced profession
 
 One of the challenges is handling AJAX components.
 
+[AJAX](https://www.w3schools.com/whatis/whatis_ajax.asp) can perform the following:
+1. Read data from a web server - after a web page has loaded
+2. Update a web page without reloading the page
+3. Send data to a web server - in the background
+
+AJAX = Asynchronous JavaScript And XML. It is not a programming language. AJAX uses a combination of:
+- A browser built-in XMLHttpRequest object (to request data from a web server)
+- JavaScript and HTML DOM (to display or use the data)
+
+AJAX allows web pages to be updated asynchronously by exchanging data with a web server behind the scenes. This means that it is possible to update parts of a web page, without reloading the whole page.
+
+<img src="https://user-images.githubusercontent.com/70295997/209401938-87b0bb16-c8e3-405b-b171-1d633ef6b8e6.png" width=500>
+
 
 ### Example 1: AJAX Dropdowns
 
