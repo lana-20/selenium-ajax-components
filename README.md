@@ -60,7 +60,17 @@ By executing the _wait_ command, Selenium suspends execution of the current test
 
 ### Example 2: AJAX Images
 
-...
+![image](https://user-images.githubusercontent.com/70295997/209411778-e6299b37-ef23-49d1-ab11-05cf4ce618b1.png)
+
+![image](https://user-images.githubusercontent.com/70295997/209411763-dfdf2eb5-9c99-4a37-a506-c16084e37add.png)
+
+![image](https://user-images.githubusercontent.com/70295997/209412181-2579e27f-fff2-4376-8e3f-d02626887c75.png)
+
+There are also Ajax images. Eg, go to www.amazon.com. Once the page is fully loaded, some sections are still pending and appear after some time. Let’s say an image with a 25% discount for outdoor brands. This image is coming on the basis of the user characteristics, ongoing holiday sales, etc. These are the Ajax components. This feedback stuff is coming on the basis of user experience. 
+
+Ajax component means that this component displays after some time (5-10 seconds), even after the page is fully loaded. It displays on the basis of some condition.
+To verify this, it’s important to wait for some time to make it appear fully. The page gets fully loaded, and immediately I try to verify it through Selenium, but the script fails. I have to wait until this particular image is fully loaded and displayed on the page. That’s where I use the Explicit Wait.
+
 
 To mimic the Fluent Wait available in Java, I use the Explicit Wait in Python and define the poll time frequency in addition to the timeout longevity. This way I can implement the Wait interface with both a timeout and a polling interval. Each _wait_ instance determines the max total timeout to wait for a condition, along with the frequency with which to poll/verify the condition.
 
@@ -71,8 +81,7 @@ To mimic the Fluent Wait available in Java, I use the Explicit Wait in Python an
 
 7-8 years ago, in Selenium RC, the Explicit Wait did not exist yet. There were no Ajax components that people created on their sites.
 There were only the Page Load Timeout and Implicit Wait in those initial days of Selenium. 
-Finally the devs gave us the amazing Explicit Wait utility, which works 99% of the time.
-
+Finally Selenium developers gave us the amazing Explicit Wait utility, which works 99% of the time.
 
 ----
 
