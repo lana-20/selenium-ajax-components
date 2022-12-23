@@ -19,6 +19,7 @@ AJAX can perform the following:
 3. Send data to a web server - in the background
 
 The biggest challenge in handling an Ajax call is knowing the loading time of the web page. 
+The usage of AJAX techniques in the web apps has introduced uncertainty in the sense that loading of the web page and the web elements present in it may happen at a different time span.
 Since a web page loads in merely some fractions of a second, a Quality Engineer (SDET) finds it difficult to test such apps via automation tools. 
 Furthermore, because Ajax apps often use different encoding and serialization techniques to submit/POST the date, crating automated test requests might also be problematic.
 Selenium has to use a _wait_ method in order to synchronize the script with the Ajax component loading time.
@@ -71,5 +72,12 @@ To mimic the Fluent Wait available in Java, I use the Explicit Wait in Python an
 7-8 years ago, in Selenium RC, the Explicit Wait did not exist yet. There were no Ajax components that people created on their sites.
 There were only the Page Load Timeout and Implicit Wait in those initial days of Selenium. 
 Finally the devs gave us the amazing Explicit Wait utility, which works 99% of the time.
+
+
+----
+
+[Use Selenium wait for page to load with Python](https://www.lambdatest.com/blog/selenium-wait-for-page-to-load/)
+
+[How to Use Selenium WebDriver Waits using Python](https://techbeamers.com/selenium-webdriver-waits-python/)
 
 
