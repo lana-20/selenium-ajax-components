@@ -5,7 +5,7 @@ Sometimes Selenium fails to function correctly if a dynamic event or change take
 Freeware comes with its own challenges, unlike QTP/UFT by HP, paid licensed software, which provides its own technical support.
 In Selenium, there is no constant and consistent support. Experienced professional engineers can provide solutions to Selenium automation challenges.
 
-One of the challenges is handling [AJAX](https://www.w3schools.com/whatis/whatis_ajax.asp) components. AJAX is a technique for creating robust and dynamic web pages.
+One of the challenges is handling AJAX components. AJAX is a technique for creating robust and dynamic web pages. It might be a developer's dream and a tester's nightmare.
 
 AJAX = Asynchronous JavaScript And XML. It is not a programming language. AJAX uses a combination of:
 - A browser built-in XMLHttpRequest object (to request data from a web server)
@@ -86,6 +86,8 @@ Finally Selenium developers gave us the amazing Explicit Wait utility, which wor
 ----
 
 [What are the Challenges you faced in Selenium?](https://youtu.be/ckPCZ8eT9qE)
+
+[AJAX](https://www.w3schools.com/whatis/whatis_ajax.asp)
 
 [AJAX-driven Dropdown List](https://code-boxx.com/country-state-city-dropdown/)
 
