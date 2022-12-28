@@ -56,10 +56,8 @@ Selenium WebDriver has to use a proper __explicit wait__ (a.k.a. WebDriverWait w
 
 <img src="https://user-images.githubusercontent.com/70295997/209401278-8634113b-d09b-4a83-8ded-2c72211461cb.png" width=150>
 
-By executing the _wait_ command, Selenium suspends execution of the current test case(s) and waits for the new/expected value/field. When the new value appears, WebDriver executes the test cases.
+By executing the _wait_ command, Selenium suspends execution of the current test case(s) and waits for the new/expected value/field. When the new value appears, WebDriver resumes executing the test cases.
 
-
-...
 
 ### Example 2: AJAX Images
 
