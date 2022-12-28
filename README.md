@@ -71,12 +71,14 @@ There are also Ajax images. Eg, go to www.amazon.com. Once the page is fully loa
 Ajax component means that this component displays after some time (5-10 seconds), even after the page is fully loaded. It displays on the basis of some condition.
 To verify this, it’s important to wait for some time to make it appear fully. The page gets fully loaded, and immediately I try to verify it through Selenium, but the script fails. I have to wait until this particular image is fully loaded and displayed on the page. That’s where I use the Explicit Wait.
 
-To mimic the Fluent Wait available in Java, I use the Explicit Wait in Python and define the poll time frequency in addition to the timeout longevity. This way I can implement the Wait interface with both a timeout and a polling interval. Each _wait_ instance determines the max total timeout to wait for a condition, along with the frequency with which to poll/verify the condition.
+To mimic a Fluent Wait, I use the Explicit Wait in Python and define the poll time frequency in addition to the timeout longevity. This way I can implement the Wait interface with both a timeout and a polling interval. Each _wait_ instance determines the max total timeout to wait for a condition, along with the frequency with which to poll/verify the condition.
 
         from selenium.webdriver.support.ui import WebDriverWait
         from selenium.webdriver.support import expected_conditions as EC
 
         WebDriverWait(driver, 7, poll_frequency=5).until(EC.alert_is_present()
+
+Alternately, consider using the 3rd party [polling2](https://polling2.readthedocs.io/en/latest/index.html) library which needs to be installed separately.
 
 7-8 years ago, in Selenium RC (a.k.a. Selenium v1), the Explicit Wait did not exist yet. There were no Ajax components that people created on their sites.
 There were only the Page Load Timeout and Implicit Wait in those initial days of Selenium. 
@@ -96,4 +98,6 @@ Finally Selenium developers gave us the amazing Explicit Wait utility, which wor
 
 [How to Use Selenium WebDriver Waits using Python](https://techbeamers.com/selenium-webdriver-waits-python/)
 
+[Selenium Python Waits](https://selenium-python.readthedocs.io/waits.html)
 
+[polling2 Library](https://pypi.org/project/polling2/)
