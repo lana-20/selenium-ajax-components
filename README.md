@@ -18,13 +18,16 @@ AJAX can perform the following:
 2. Update a web page without reloading the page
 3. Send data to a web server - in the background
 
+<img src="https://user-images.githubusercontent.com/70295997/209401938-87b0bb16-c8e3-405b-b171-1d633ef6b8e6.png" width=500>
+
 The biggest challenge in handling an Ajax call is knowing the loading time of the web page. 
 The usage of AJAX techniques in the web apps has introduced uncertainty in the sense that loading of the web page and the web elements present in it may happen at a different time span.
 Since a web page loads in merely some fractions of a second, a Quality Engineer (SDET) finds it difficult to test such apps via automation tools. 
 Furthermore, because Ajax apps often use different encoding and serialization techniques to submit/POST the date, crating automated test requests might also be problematic.
 Selenium has to use a _wait_ method in order to synchronize the script with the Ajax component loading time.
 
-<img src="https://user-images.githubusercontent.com/70295997/209401938-87b0bb16-c8e3-405b-b171-1d633ef6b8e6.png" width=500>
+<img src="https://user-images.githubusercontent.com/70295997/209741349-819780e4-9823-4627-9f05-221f292ba98e.png" width=700>
+
 
 ### Example 1: AJAX Dropdowns
 
