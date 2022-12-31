@@ -81,6 +81,11 @@ To mimic a Fluent Wait, I use the Explicit Wait in Python and define the poll ti
 
 Alternately, consider using the 3rd party [polling2](https://polling2.readthedocs.io/en/latest/index.html) library which needs to be installed separately.
 
+Here is another simple summary on handling AJAX elements, with an alternative polling approach. It's not advisable to mix the dynamic Explicit and Implicit Waits. And the static wait executed via Python _time_ module is mostly applicable in demo situations.
+
+<img src="https://user-images.githubusercontent.com/70295997/210153586-6ad48b26-8a3a-4987-ad59-a9cc0bd84a22.png" width=600>
+
+
 7-8 years ago, in Selenium RC (a.k.a. Selenium v1), the Explicit Wait did not exist yet. There were no Ajax components that people created on their sites.
 There were only the Page Load Timeout and Implicit Wait in those initial days of Selenium. 
 Finally Selenium developers gave us the amazing Explicit Wait utility, which works 99% of the time.
