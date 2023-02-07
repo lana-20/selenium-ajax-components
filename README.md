@@ -72,6 +72,13 @@ There are also Ajax images. Eg, go to www.amazon.com. Once the page is fully loa
 Ajax component means that this component displays after some time (5-10 seconds), even after the page is fully loaded. It displays on the basis of some condition.
 To verify this, it’s important to wait for some time to make it appear fully. The page gets fully loaded, and immediately I try to verify it through Selenium, but the script fails. I have to wait until this particular image is fully loaded and displayed on the page. That’s where I use the Explicit Wait.
 
+### Explicit Waits
+
+* Poll for app state using client-side methods
+* Can check for any state which can be determined using WebDriver functionality
+* The polling functionality is built into the Python client on a class called WebDriverWait (<code>selenium.webdriver.support.wait.WebDriverWait</code>)
+* WebDriverWaits have an <code>until()</code> method which takes an Expected Condition(<code>selenium.webdriver.support.expected_conditions</code>)
+
 To mimic a Fluent Wait, I use the Explicit Wait in Python and define the poll time frequency in addition to the timeout longevity. This way I can implement the Wait interface with both a timeout and a polling interval. Each _wait_ instance determines the max total timeout to wait for a condition, along with the frequency with which to poll/verify the condition.
 
         from selenium.webdriver.support.ui import WebDriverWait
@@ -81,16 +88,19 @@ To mimic a Fluent Wait, I use the Explicit Wait in Python and define the poll ti
 
 Alternately, consider using the 3rd party [polling2](https://polling2.readthedocs.io/en/latest/index.html) library which needs to be installed separately.
 
-Here is another simple summary on handling AJAX elements, with an alternative polling approach. It's not advisable to mix the dynamic Explicit and Implicit Waits. And the static wait executed via Python _time_ module is mostly applicable in demo situations.
-
-<img src="https://user-images.githubusercontent.com/70295997/210153586-6ad48b26-8a3a-4987-ad59-a9cc0bd84a22.png" width=600>
-
-
 7-8 years ago, in Selenium RC (a.k.a. Selenium v1), the Explicit Wait did not exist yet. There were no Ajax components that people created on their sites.
 There were only the Page Load Timeout and Implicit Wait in those initial days of Selenium. 
 Finally Selenium developers gave us the amazing Explicit Wait utility, which works 99% of the time.
 
 ----
+### Extra Code Gists & Notes
+
+Here is another simple summary on handling AJAX elements, with an alternative polling approach. It's not advisable to mix the dynamic Explicit and Implicit Waits. And the static wait executed via Python _time_ module is mostly applicable in demo situations.
+
+<img src="https://user-images.githubusercontent.com/70295997/210153586-6ad48b26-8a3a-4987-ad59-a9cc0bd84a22.png" width=600>
+
+----
+### References
 
 [What are the Challenges you faced in Selenium?](https://youtu.be/ckPCZ8eT9qE)
 
